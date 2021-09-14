@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/notice_detail/notice_detail",
+    "pages/home/home"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2684fe",
+    "navigationBarTitleText": "通知服务平台",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#2684fe",
+    "list": [{
+            "pagePath": "pages/index/index",
+            "text": "校园通知",
+            "iconPath": "images/notice.png",
+            "selectedIconPath": "images/notice-active.png"
+        },
+        {
+            "pagePath": "pages/home/home",
+            "text": "我的",
+            "iconPath": "images/my.png",
+            "selectedIconPath": "images/my-active.png"
+        }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

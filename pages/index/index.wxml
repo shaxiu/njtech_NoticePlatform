@@ -1,0 +1,33 @@
+<!--index.wxml-->
+<!--pages/news/news.wxml-->
+<view class="banner cu-bar search bg-white shadow shadow-lg bg-white">
+  <view class="action">
+    <picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}"
+      range="{{objectMultiArray}}" range-key="owname">
+      <text>{{opt_show}}</text>
+      <text class="cuIcon-triangledownfill"></text>
+    </picker>
+  </view>
+  <view class="search-form round">
+    <text class="cuIcon-search"></text>
+    <input type="text" placeholder="输入关键字查询，如输入'选课'" value="{{key_val}}" type="text" confirm-type="查询"
+      bindconfirm="search"></input>
+    <!-- 取消按钮 -->
+    <view style="font-size: 30rpx;" bindtap="hideInput">
+      <text class="cuIcon-close"></text>
+    </view>
+  </view>
+</view>
+<!-- 通知内容 -->
+<view class="cu-list shadow menu bg-white text-sub sm-border">
+  <view wx:for="{{notice}}" wx:key="index" class="cu-item arrow" data-flag="{{item._id}}" bindtap="showNotice">
+    <view class="content padding-top-sm padding-bottom-sm">
+      <text>{{item.wbtitle}}</text>
+      <view class="text-gray text-sm">通知来源: {{item.owname}}</view>
+      <view class="text-gray text-sm">发布时间: {{item.wbdate}}</view>
+    </view>
+  </view>
+  <!-- 显示更多信息 -->
+  <view wx:if="{{isLoading}}" class="cu-load loading" />
+  <view wx:elif="{{!hasMoreNotice}}" class="cu-load over" />
+</view>

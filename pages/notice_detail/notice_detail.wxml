@@ -1,0 +1,8 @@
+<!--notice_detail.wxml-->
+<view class="margin-sm padding-sm bg-white radius shadow">
+  <view class="solids-bottom margin-bottom-sm" style="text-align: center;">
+    <view class="text-blod text-black text-xxl margin-bottom-sm">{{notice.wbtitle}}</view>
+    <view class="padding-bottom">发布时间: {{notice.wbdate}}</view>
+  </view>
+  <rich-text nodes="{{notice.newscontent}}"></rich-text>
+</view>

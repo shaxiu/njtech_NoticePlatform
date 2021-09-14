@@ -1,0 +1,18 @@
+/**index.wxss**/
+swiper{
+	height: 40vh;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	border-bottom: 1rpx solid rgba(128, 128, 128, 0.281);
+	height: 100rpx;
+	margin-left: 40rpx;
+}
+
+.banner {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+  }
