@@ -15,6 +15,6 @@
     </van-tag>
   </view>
 </view>
-<view wx:if="{{!is_update}}" class="commit_btn solid-bottom text-xsl padding" bindtap="commit">
+<view wx:if="{{!is_update}}" class="commit_btn  text-xsl padding" bindtap="commit">
         <text class=" cuIcon-roundcheckfill text-blue"></text>
 </view>
