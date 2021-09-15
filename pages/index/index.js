@@ -63,7 +63,7 @@ Page({
       })
   },
   onShow:function(){
-    if(app.globalData.is_update==true&&this.data.notice!=''){
+    if(app.globalData.is_update==true){
       this.getSub_notice_List()
     }
   },

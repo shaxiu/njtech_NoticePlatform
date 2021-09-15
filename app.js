@@ -1,7 +1,7 @@
 // app.js
 App({
   globalData:{
-    is_update:true
+    is_update:false
   },
   onLaunch() {
     wx.cloud.init({
