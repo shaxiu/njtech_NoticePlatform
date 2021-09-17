@@ -264,5 +264,11 @@ Page({
     this.setData({
       key_val: ''
     })
+  },
+  /**
+   * 允许分享界面
+   */
+  onShareAppMessage: function () {
+    
   }
 })
