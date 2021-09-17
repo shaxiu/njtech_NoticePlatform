@@ -103,7 +103,8 @@ Page({
     }).then(res=>{
       wx.hideLoading()
       that.setData({
-        is_update:true
+        is_update:true,
+        _id:111
       })
       wx.showToast({ // 显示Toast
         title: '订阅成功',

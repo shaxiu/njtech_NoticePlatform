@@ -10,7 +10,9 @@ const _=db.command
 exports.main = async (event, context) => {
   console.log(event.subList)
   if(event._id!=""){
-    return await cloud.database().collection('subList').doc(event._id).update({
+    return await cloud.database().collection('subList').where({
+      openId:event.userInfo.openId
+    }).update({
       data:{
         subList:event.subList
       }
