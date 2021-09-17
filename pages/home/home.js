@@ -121,7 +121,7 @@ Page({
     if(that.data.is_update==false){
       wx.showModal({
         title: '',
-        content: '为保存订阅信息，是否保存',
+        content: '未保存订阅信息，是否保存',
         success(res) {
          if (res.confirm) {
            that.commit()
