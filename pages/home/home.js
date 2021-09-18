@@ -87,6 +87,15 @@ Page({
   },
   commit:function(){
     let that =this
+    wx.requestSubscribeMessage({
+      tmplIds: ['uewy-Hb_okdZ2rjaaQ0JdW5_6Ywbu73oUjepLBN5KDQ'],
+      success (res) { 
+        console.log(res)
+      },
+      fail(res){
+        console.log(res)
+      }
+    })
     wx.showLoading({
       title: '订阅中',
     })
