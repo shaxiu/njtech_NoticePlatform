@@ -90,10 +90,11 @@ Page({
     wx.requestSubscribeMessage({
       tmplIds: ['uewy-Hb_okdZ2rjaaQ0JdW5_6Ywbu73oUjepLBN5KDQ'],
       success (res) { 
-        console.log(res)
+        that.updateSubStatus(true)
       },
       fail(res){
         console.log(res)
+        that.updateSubStatus(false)
       }
     })
     wx.showLoading({
@@ -124,6 +125,19 @@ Page({
       console.log(app.globalData.is_update)
     }).catch(res=>{
       console.log("请求失败",res)
+    })
+  },
+  updateSubStatus:function(subStatus){
+    console.log(subStatus)
+    wx.cloud.callFunction({
+      name: 'updateSubStatus',
+      data: {
+        isSub:subStatus
+      }
+    }).then(res=>{
+      console.log(res)
+    }).catch(res=>{
+      console.log("更新失败",res)
     })
   },
   onHide:function(){
