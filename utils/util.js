@@ -6,7 +6,6 @@ function formatRichText(html) {
     match = match.replace(/height="[^"]+"/gi, '').replace(/height='[^']+'/gi, '');
     return match;
   });
-  console.log(newContent)
   newContent = newContent.replace(/style="[^"]+"/gi, function (match, capture) {
     match = match.replace(/width:[^;]+;/gi, 'max-width:100%;').replace(/width:[^;]+;/gi, 'max-width:100%;');
     return match;

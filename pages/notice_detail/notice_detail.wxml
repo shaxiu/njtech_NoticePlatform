@@ -6,3 +6,6 @@
   </view>
   <rich-text nodes="{{notice.newscontent}}"></rich-text>
 </view>
+<view  class="copy_btn" bindtap="copyLink">
+       <image class="copy_img" src="../../images/copyLink.png"></image>
+</view>

@@ -1,1 +1,10 @@
 /* pages/notice_detail/notice_detail.wxss */
+.copy_btn{
+	position: fixed;
+	right: 40rpx;
+	bottom: 200rpx;
+}
+.copy_img{
+	width: 100rpx;
+	height: 100rpx;
+}

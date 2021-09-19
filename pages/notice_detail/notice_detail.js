@@ -33,7 +33,23 @@ Page({
         }
       })
   },
-
+  copyLink:function(){
+    let that=this;
+    var owname=that.data.notice.owname
+    var title=that.data.notice.wbtitle
+    var url=that.data.notice.wbnewsurl
+    var toCopy=owname+":"+title+"\n"+url
+    wx.setClipboardData({
+      data: toCopy,
+      success (res) {
+        wx.getClipboardData({
+          success (res) {
+            console.log(res.data) // data
+          }
+        })
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
