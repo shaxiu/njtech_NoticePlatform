@@ -9,7 +9,7 @@
 </view>
 <view class="tags_box">
   <view wx:if="{{sub_list==''}}" class="margin-top-xl">暂无订阅信息</view>
-  <view wx:for="{{sub_list}}" wx:key="_id" class="padding-top-sm padding-bottom-sm">
+  <view wx:for="{{sub_list}}" wx:key="index" class="padding-sm">
     <van-tag closeable size="medium" type="primary" data-index="{{index}}" bind:close="onClose">
       {{item.owname}}
     </van-tag>
