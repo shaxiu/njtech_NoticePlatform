@@ -22,19 +22,6 @@ Page({
     wx.showLoading({
       title: '加载中',
     })
-    //获取学院部门列表
-    wx.cloud.callFunction({
-      name: 'getSourceList'
-    })
-    .then(res => {
-      var result = res.result.data
-      that.setData({
-        picker:result
-      })
-      // console.log(result)
-    }).catch(res => {
-      console.log("请求失败", res)
-    })
     //获取用订阅信息
     wx.cloud.callFunction({
       name: 'getSubList',
@@ -48,7 +35,25 @@ Page({
         })
       }
       console.log("sublist",that.data.sub_list)
-      wx.hideLoading()
+      //获取学院部门列表
+      wx.cloud.callFunction({
+        name: 'getSourceList'
+      })
+      .then(res => {
+        var result = res.result.data
+        for(var i=0;i<that.data.sub_list.length;i++){
+          // console.log(that.data.sub_list[i]._id)
+          result=result.filter(item=>item._id!=that.data.sub_list[i]._id)
+          // console.log(result)
+        }
+        that.setData({
+          picker:result
+        })
+        wx.hideLoading()
+        // console.log(result)
+      }).catch(res => {
+        console.log("请求失败", res)
+      })
     }).catch(res => {
       console.log("请求失败", res)
     })
@@ -75,9 +80,13 @@ Page({
   onClose:function(e){
     var index=e.target.dataset.index
     // console.log(index)
-    // console.log(this.data.sub_list[index])
+    console.log(this.data.sub_list[index])
     var picker=this.data.picker
-    picker.push(this.data.sub_list[index])
+    var index_t=picker.findIndex(x => x._id ===this.data.sub_list[index]._id-1)
+    // console.log(index_t)
+    // picker.push(this.data.sub_list[index])
+    picker.splice(index_t+1,0,this.data.sub_list[index])
+    // console.log(picker)
     this.data.sub_list.splice(index,1)
     this.setData({
       picker:picker,
