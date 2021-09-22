@@ -21,7 +21,7 @@
     <view class="bg-blue content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">v2.1.2</view>
-        <view class="cu-tag line-white">2021/9/21</view>
+        <view class="cu-tag line-white">2021/09/21</view>
       </view>
       <view class="margin-top-sm text-content">
         <view>1.新增一键复制通知标题链接功能</view>
@@ -34,7 +34,7 @@
     <view class="bg-blue content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">v2.1.0</view>
-        <view class="cu-tag line-white">2021/9/19</view>
+        <view class="cu-tag line-white">2021/09/19</view>
       </view>
       <view class="margin-top-sm text-content">
         <view>1.添加订阅消息推送功能</view>
