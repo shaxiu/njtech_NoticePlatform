@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<view class="banner cu-bar bg-white shadow shadow-lg bg-white">
+  <view class="action">
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}" range-key="owname">
+      <text>{{index?opt_toShow.owname:'选择要订阅的学院或部门'}}</text>
+      <text class="cuIcon-triangledownfill"></text>
+    </picker>
+  </view>
+</view>
+<view class="tags_box">
+  <view wx:if="{{sub_list==''}}" class="margin-top-xl">暂无订阅信息</view>
+  <view wx:for="{{sub_list}}" wx:key="index" class="padding-sm">
+    <van-tag closeable size="medium" type="primary" data-index="{{index}}" bind:close="onClose">
+      {{item.owname}}
+    </van-tag>
+  </view>
+</view>
+<view wx:if="{{!is_update}}" class="commit_btn  text-xsl padding" bindtap="commit">
+        <text class=" cuIcon-roundcheckfill text-blue"></text>
+</view>
