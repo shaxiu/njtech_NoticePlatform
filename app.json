@@ -1,8 +1,11 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/about/about",
     "pages/notice_detail/notice_detail",
-    "pages/home/home"
+    "pages/sub/sub",
+    "pages/about/log/log",
+    "pages/about/disclaimer/disclaimer"
   ],
   "window":{
     "backgroundColor": "#F6F6F6",
@@ -20,11 +23,17 @@
             "selectedIconPath": "images/notice-active.png"
         },
         {
-            "pagePath": "pages/home/home",
-            "text": "我的",
+            "pagePath": "pages/sub/sub",
+            "text": "订阅",
             "iconPath": "images/my.png",
             "selectedIconPath": "images/my-active.png"
-        }
+        },
+        {
+          "pagePath": "pages/about/about",
+          "text": "关于",
+          "iconPath": "images/about.png",
+          "selectedIconPath": "images/about-active.png"
+      }
     ]
   },
   "style": "v2",
