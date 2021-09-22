@@ -41,11 +41,10 @@ Page({
     var toCopy=owname+":"+title+"\n"+url
     wx.setClipboardData({
       data: toCopy,
-      success (res) {
-        wx.getClipboardData({
-          success (res) {
-            console.log(res.data) // data
-          }
+      success: res => {
+        wx.showToast({
+          title: '已复制通知标题及链接',
+          duration: 1000,
         })
       }
     })
