@@ -1,0 +1,37 @@
+<!--pages/about/about.wxml-->
+<!-- logo -->
+<view class="logo padding-top">
+    <image src="/images/logo.png"></image>
+</view>
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+    <view class="cu-item arrow">
+      <view class="content" bindtap="CopyLink" data-link="https://github.com/shaxiu/njtech_NoticePlatform">
+        <text class="cuIcon-github text-grey"></text>
+        <text class="text-grey">GitHub</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/disclaimer/disclaimer" hover-class="none">
+        <image src="/images/logo.png" class="png" mode="aspectFit"></image>
+        <text class="text-grey">关于南工info</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/log/log" hover-class="none">
+        <text class="cuIcon-formfill text-blue"></text>
+        <text class="text-grey">版本日志</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <view class="content" bindtap="showQrcode">
+        <text class="cuIcon-appreciatefill text-red"></text>
+        <text class="text-grey">赞赏支持</text>
+      </view>
+    </view>
+    <view class="cu-item arrow">
+      <button class="cu-btn content" style="font-weight: normal;" hover-class="none" open-type="feedback">
+        <text class="cuIcon-writefill text-green"></text>
+        <text class="text-grey">意见反馈</text>
+      </button>
+    </view>
+  </view>

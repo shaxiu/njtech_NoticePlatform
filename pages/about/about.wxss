@@ -1,0 +1,14 @@
+/* pages/about/about.wxss */
+.logo{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.logo image{
+	width: 300rpx;
+	height: 300rpx;
+	border-radius: 50%;
+	/* border: 2px solid #fff; */
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
