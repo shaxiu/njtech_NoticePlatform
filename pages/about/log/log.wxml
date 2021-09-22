@@ -1,0 +1,80 @@
+<!--pages/about/log/log.wxml-->
+<view class="cu-timeline">
+  <view class="cu-item text-blue">
+    <view class="bg-gradual-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.2.1</view>
+        <view class="cu-tag line-white">2021/09/22</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加关于板块</view>
+        <view>2.增加关于南工info</view>
+        <view>2.增加日志</view>
+        <view>3.增加赞赏码，请多多支持！</view>
+        <view>4.增加意见反馈</view>
+        <view>5.增加GitHub项目地址复制</view>
+        <view>6.修改成功复制通知标题链接的文字提示</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.1.2</view>
+        <view class="cu-tag line-white">2021/9/21</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.新增一键复制通知标题链接功能</view>
+        <view>2.优化订阅设置界面tag间距</view>
+        <view>3.优化订阅设置界面下拉列表(只显示未订阅部门)</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.1.0</view>
+        <view class="cu-tag line-white">2021/9/19</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加订阅消息推送功能</view>
+        <view>2.完善订阅消息推送逻辑</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.3</view>
+        <view class="cu-tag line-white">2021/09/17</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.允许主页分享页面</view>
+        <view>2.修改标题栏名称</view>
+        <view>3.修改错误的中文提示</view>
+        <view>4.修复当多次提交订阅时，会重复添加数据的问题</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.2</view>
+        <view class="cu-tag line-white">2021/09/15</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.去除订阅按钮底部边框样式</view>
+        <view>2.修复订阅后通知页无法自动刷新的问题</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.0.1</view>
+        <view class="cu-tag line-white">2021/09/14</view>
+      </view>
+      <view class="margin-top-sm text-content">2.0新版本上线</view>
+    </view>
+  </view>
+</view>
