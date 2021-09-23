@@ -11,6 +11,12 @@
       </view>
     </view>
     <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/question/question" hover-class="none">
+        <text class="cuIcon-questionfill text-yellow"></text>
+        <text class="text-grey">疑问解答</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/disclaimer/disclaimer" hover-class="none">
         <image src="/images/logo.png" class="png" mode="aspectFit"></image>
         <text class="text-grey">关于南工info</text>
