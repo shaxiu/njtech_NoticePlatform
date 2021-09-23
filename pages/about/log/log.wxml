@@ -3,6 +3,19 @@
   <view class="cu-item text-blue">
     <view class="bg-gradual-blue content shadow">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.2.2</view>
+        <view class="cu-tag line-white">2021/09/23</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加疑问解答</view>
+        <view>2.修改关于南工info内容，欢迎大家推广小程序！</view>
+        <view>ps: 截至 2021/09/23 22:37 共有64人成功设置订阅(其中设置允许推送消息55人)，感谢支持！纯朋友圈推广太难了(ㄒoㄒ)</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">v2.2.1</view>
         <view class="cu-tag line-white">2021/09/22</view>
       </view>
@@ -15,7 +28,7 @@
         <view>5.增加GitHub项目地址复制</view>
         <view>6.修改成功复制通知标题链接的文字提示</view>
       </view>
-    </view>   
+    </view>
   </view>
   <view class="cu-item text-blue">
     <view class="bg-blue content shadow">
