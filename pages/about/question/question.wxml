@@ -1,0 +1,5 @@
+<!--pages/about/question/question.wxml-->
+<view wx:for="{{question}}" wx:key="index" class="bg-white content shadow margin-xl padding-lg">
+<view class="text-xl text-bold margin-bottom-sm text-black text-shadow">Q: {{item.q}}</view>
+<view class="text-lg">A: {{item.a}}</view>
+</view>

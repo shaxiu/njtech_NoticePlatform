@@ -5,7 +5,8 @@
     "pages/notice_detail/notice_detail",
     "pages/sub/sub",
     "pages/about/log/log",
-    "pages/about/disclaimer/disclaimer"
+    "pages/about/disclaimer/disclaimer",
+    "pages/about/question/question"
   ],
   "window":{
     "backgroundColor": "#F6F6F6",
