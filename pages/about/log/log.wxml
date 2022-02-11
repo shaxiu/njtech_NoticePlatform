@@ -3,6 +3,20 @@
   <view class="cu-item text-blue">
     <view class="bg-gradual-blue content shadow">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.3.1</view>
+        <view class="cu-tag line-white">2022/02/10</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.添加复制附件下载链接功能，可通过点击附件，复制下载链接</view>
+        <view>2.修复模糊搜索通知后点击'X'无法回到原界面的问题</view>
+        <view>2.优化其他小细节</view>
+        <view>ps: 截至 2022/02/10 22:19 共有161人成功设置订阅(其中设置允许推送消息134人)，累计访问人数721人，感谢支持！纯朋友圈推广太难了(ㄒoㄒ)</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">v2.2.2</view>
         <view class="cu-tag line-white">2021/09/23</view>
       </view>

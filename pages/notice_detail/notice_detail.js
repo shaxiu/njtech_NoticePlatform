@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    notice:{}
+    notice:{},
+    files:[]
   },
 
   /**
@@ -26,6 +27,12 @@ Page({
           that.setData({
             notice: res.data
           })
+          if(res.data.files!== undefined){
+            that.setData({
+              files:res.data.files
+            })
+            // console.log(that.data.files)
+          }
           wx.hideLoading()
         },
         fail(err) {
@@ -43,7 +50,21 @@ Page({
       data: toCopy,
       success: res => {
         wx.showToast({
-          title: '已复制通知标题及链接',
+          title: '已复制通知链接',
+          duration: 1000,
+        })
+      }
+    })
+  },
+  copyfjLink:function(e){
+    let that=this;
+    var flag=e.currentTarget.dataset.flag
+    var toCopy=that.data.files[flag].link
+    wx.setClipboardData({
+      data: toCopy,
+      success: res => {
+        wx.showToast({
+          title: '已复制下载链接',
           duration: 1000,
         })
       }

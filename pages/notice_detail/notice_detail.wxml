@@ -5,6 +5,9 @@
     <view class="padding-bottom">发布时间: {{notice.wbdate}}</view>
   </view>
   <rich-text nodes="{{notice.newscontent}}"></rich-text>
+  <view class="margin-sm padding-sm bg-blue radius shadow" wx:for="{{files}}" wx:key="index" bindtap="copyfjLink" data-flag="{{index}}">
+    <text>{{item.title}}</text>
+  </view>
 </view>
 <view  class="copy_btn" bindtap="copyLink">
        <image class="copy_img" src="../../images/copyLink.png"></image>
