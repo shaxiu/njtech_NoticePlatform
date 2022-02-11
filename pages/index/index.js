@@ -57,7 +57,6 @@ Page({
           source_all: result,
           objectMultiArray: objectMultiArray
         })
-        wx.hideLoading()
       }).catch(res => {
         console.log("请求失败", res)
       })
@@ -112,7 +111,7 @@ Page({
         key_val: key_val
       }
     }).then(res => {
-      console.log(res)
+      // console.log(res)
       that.setData({
         notice: that.data.notice.concat(res.result.data)
       })
@@ -124,16 +123,13 @@ Page({
       that.setData({
         isLoading: false
       })
-      wx.hideLoading()
+      
     }).catch(res => {
       console.log("请求失败", res)
     })
   },
   getSub_notice_List: function () {
     let that = this
-    wx.showLoading({
-      title: '加载中',
-    })
     wx.cloud.callFunction({
         name: 'getSubList',
       })
@@ -262,8 +258,10 @@ Page({
    */
   hideInput: function () {
     this.setData({
-      key_val: ''
+      key_val: '',
+      notice: []
     })
+    this.getNoticeList(this.data.ow, 0)
   },
   /**
    * 允许分享界面
