@@ -117,5 +117,17 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  /**
+   * 用户点击右上角分享至朋友圈
+   */
+  onShareTimeline:function(){
+    let that=this;
+    var owname=that.data.notice.owname
+    var title=that.data.notice.wbtitle
+    var toCopy=owname+":"+title
+    return{
+      title:toCopy
+    }
   }
 })

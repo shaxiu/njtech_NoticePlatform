@@ -3,6 +3,17 @@
   <view class="cu-item text-blue">
     <view class="bg-gradual-blue content shadow">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-blue">v2.4.0</view>
+        <view class="cu-tag line-white">2022/02/16</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.支持分享通知页面至朋友圈</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue content shadow">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-blue">v2.3.1</view>
         <view class="cu-tag line-white">2022/02/10</view>
       </view>
